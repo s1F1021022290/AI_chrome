@@ -24,17 +24,15 @@ jobs:
       # Googleドライブからモデルファイルをダウンロード
       - name: Download model from Google Drive
         run: |
-            mkdir -p addchat/flask-server/model
+          mkdir -p addchat/flask-server/model
           
-          # 最初のモデルをダウンロードして解凍
-            gdown --id 1rOjirphpa7RudviHrCae54EM8QHHPkNY -O model.zip
-            unzip model.zip -d addchat/flask-server/model/
-            rm model.zip  # ダウンロードしたzipを削除
+          gdown --id 1rOjirphpa7RudviHrCae54EM8QHHPkNY -O model.zip
+          unzip model.zip -d addchat/flask-server/model/
+          rm model.zip  # ダウンロードしたzipを削除
 
-          # 2つ目のモデルをダウンロードして解凍
-            gdown --id 1MPyaPwGHqQxg8blFfCM4FfQyC44_Home -O model2.zip
-            unzip model2.zip -d addchat/flask-server/model/
-            rm model2.zip  # ダウンロードしたzipを削除
+          gdown --id 1MPyaPwGHqQxg8blFfCM4FfQyC44_Home -O model2.zip
+          unzip model2.zip -d addchat/flask-server/model/
+          rm model2.zip  # ダウンロードしたzipを削除
 
       # Docker Hubにログイン
       - name: Log in to Docker Hub
