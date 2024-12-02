@@ -25,8 +25,12 @@ jobs:
       - name: Download model from Google Drive
         run: |
           mkdir -p addchat/flask-server/model
+          
           gdown --id 1rOjirphpa7RudviHrCae54EM8QHHPkNY -O model.zip
           unzip model.zip -d addchat/flask-server/model/
+
+          gdown --id 1MPyaPwGHqQxg8blFfCM4FfQyC44_Home -O model2.zip
+          unzip model2.zip -d addchat/flask-server/model/
 
       # Docker Hubにログイン
       - name: Log in to Docker Hub
