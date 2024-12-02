@@ -1,6 +1,5 @@
 name: Build and Push Docker Image
 
-# mainブランチへのpushをトリガー
 on:
   push:
     branches:
@@ -14,6 +13,20 @@ jobs:
       # リポジトリをチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      # 必要なツールをインストール
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip unzip
+          pip install gdown
+
+      # Googleドライブからモデルファイルをダウンロード
+      - name: Download model from Google Drive
+        run: |
+          mkdir -p addchat/flask-server/model
+          gdown --id 1rOjirphpa7RudviHrCae54EM8QHHPkNY -O model.zip
+          unzip model.zip -d addchat/flask-server/model/
 
       # Docker Hubにログイン
       - name: Log in to Docker Hub
