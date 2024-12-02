@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "X_Scam_Detector",
+  "version": "1.0",
+  "description": "Detect money-related scams on Twitter.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "options_page": "html/options.html"
+}

@@ -1,0 +1,80 @@
+/* 全体のスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc; /* 優しい青の背景 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* コンテナ */
+.container {
+  background-color: #fff; /* 白背景 */
+  padding: 30px;
+  border-radius: 10px; /* 丸みを帯びた角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
+  width: 300px;
+  text-align: center;
+}
+
+/* タイトル */
+h1 {
+  font-size: 28px;
+  color: #4a90e2; /* 青色 */
+  margin-bottom: 20px;
+}
+
+/* セレクトボックス */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px; /* 丸みを帯びた角 */
+  border: 1px solid #ccc; /* グレーの枠線 */
+  background-color: #f9f9f9; /* 明るい背景 */
+  font-size: 16px;
+}
+
+/* ボタン */
+button {
+  background-color: #4a90e2; /* 青色のボタン */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* 丸みを帯びた角 */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7; /* ホバー時に色が変化 */
+}
+
+/* ラベル */
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+  margin-top: 20px; 
+}
+
+/* 注意書きのスタイル */
+.notice {
+  background-color: #f8d7da; /* 赤みがかった背景色 */
+  color: #721c24; /* 赤色の文字 */
+  padding: 8px; /* 余白を少し減らす */
+  border-radius: 8px; /* 丸みを帯びた角 */
+  border: 1px solid #f5c6cb; /* 薄い赤色の枠線 */
+  font-size: 12px; /* 更に小さめのフォントサイズ */
+  margin-bottom: 12px; /* 下部の余白を少し減らす */
+}
+
+.notice strong {
+  font-weight: bold; /* 重要な部分を強調 */
+}
