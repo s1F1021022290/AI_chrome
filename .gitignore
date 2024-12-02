@@ -154,7 +154,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# モデルディレクトリを無視する
+# モデルディレクトリを無視
 BERT/result-bert-4060/
 RoBERTA/results-roberta-4060/
 
