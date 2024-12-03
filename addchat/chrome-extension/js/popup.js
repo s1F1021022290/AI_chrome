@@ -6,7 +6,7 @@ document.getElementById("saveBtn").addEventListener("click", () => {
     alert("選択したモデルが保存されました！");
 
     // サーバーに選択されたモデルを通知
-    fetch('http://127.0.0.1:5000/switch_model', {
+    fetch('https://shimizu-ai-chrome-1023547087113.asia-northeast1.run.app/switch_model', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

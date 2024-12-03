@@ -1,6 +1,6 @@
 let debounceTimeout;
 let tweetProcessing = new Set(); // 処理中のツイートを追跡
-const proxyUrl = 'http://localhost:5000/detect';  // Flaskサーバーのエンドポイン
+const proxyUrl = 'https://shimizu-ai-chrome-1023547087113.asia-northeast1.run.app/detect';  // Flaskサーバーのエンドポイン
 let apiKey;
 
 // APIキーを取得する関数
