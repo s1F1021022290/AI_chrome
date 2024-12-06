@@ -3,7 +3,7 @@
   "name": "X_Scam_Detector",
   "version": "1.0",
   "description": "Detect money-related scams on Twitter.",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["storage"],
   "action": {
     "default_popup": "html/popup.html"
   },
